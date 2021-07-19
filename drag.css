@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  background-color: lightgray;
+  height: 100vh;
+}
+.page {
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+.container {
+  padding: 1em;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.draggable.highlight {
+  margin-bottom: 25px;
+}
+.usechoice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+.generatedDesign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 25px; */
+  margin-top: 6rem;
+}
+.emailInput {
+  display: grid;
+  margin-left: 0.5em;
+}
+.password {
+  display: grid;
+  margin-left: 0.5em;
+}
+.telnum {
+  display: grid;
+  /* margin-left: 0.5em; */
+}
+button.submit {
+  width: 100%;
+  /* margin-top: 3rem; */
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+.inputs {
+  width: 85%;
+  margin-left: 0.75rem;
+  background: lightgray;
+  border: 1px solid;
+}
+label {
+  margin-left: 0.75rem;
+}
+.design {
+  border: 1px solid;
+  padding: 12px;
+  border-radius: 10px;
+}
+.generated {
+  /* float: right; */
+  text-align: -webkit-center;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+.highlight {
+  border: 2px dashed rgb(0 0 0 / 31%);
+  padding-bottom: 15px;
+}
+
+div#or {
+  margin-top: 15px;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .usechoice {
+    display: block;
+  }
+  .generatedDesign {
+    display: block;
+  }
+}
